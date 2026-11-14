@@ -283,7 +283,7 @@ function Enquiries() {
             Swipe horizontally to view all columns →
           </p>
 
-          <table className="w-full min-w-[900px] table-fixed text-left text-sm">
+          <table className="w-full min-w-225 table-fixed text-left text-sm">
             <thead className="bg-slate-900/60 text-xs uppercase text-slate-500">
               <tr>
                 <th className="w-[23%] px-5 py-4">Customer</th>
@@ -335,14 +335,14 @@ function Enquiries() {
                     >
                       <td className="px-5 py-4">
                         <p
-                          className="max-w-[190px] truncate font-medium text-white"
+                          className="max-w-47.5 truncate font-medium text-white"
                           title={formatCustomerName(enquiry.name)}
                         >
                           {formatCustomerName(enquiry.name)}
                         </p>
 
                         <p
-                          className="mt-1 max-w-[190px] truncate text-xs text-slate-500"
+                          className="mt-1 max-w-47.5 truncate text-xs text-slate-500"
                           title={enquiry.email}
                         >
                           {enquiry.email}
@@ -508,7 +508,7 @@ function Enquiries() {
                         Customer
                       </p>
 
-                      <p className="mt-1 break-words font-medium text-white">
+                      <p className="mt-1 wrap-break-word font-medium text-white">
                         {formatCustomerName(selectedEnquiry.name)}
                       </p>
                     </div>
@@ -553,7 +553,7 @@ function Enquiries() {
                       Subject
                     </p>
 
-                    <p className="mt-1 break-words font-medium text-white">
+                    <p className="mt-1 wrap-break-word font-medium text-white">
                       {selectedEnquiry.subject}
                     </p>
                   </div>
@@ -572,7 +572,7 @@ function Enquiries() {
                     </h3>
                   </div>
 
-                  <p className="whitespace-pre-wrap break-words text-sm leading-6 text-slate-300">
+                  <p className="whitespace-pre-wrap wrap-break-word text-sm leading-6 text-slate-300">
                     {selectedEnquiry.message}
                   </p>
                 </div>

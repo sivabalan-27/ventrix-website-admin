@@ -508,7 +508,7 @@ function Applications() {
         </div>
 
         <div className="w-full overflow-x-auto">
-          <table className="w-full min-w-[750px] text-left text-sm">
+          <table className="w-full min-w-187.5 text-left text-sm">
             <thead className="bg-slate-900/60 text-xs uppercase text-slate-500">
               <tr>
                 <th className="px-5 py-4">Candidate</th>
@@ -757,7 +757,7 @@ function Applications() {
                           </p>
                         )
                       ) : (
-                        <p className="mt-1 break-words text-sm text-slate-200">
+                        <p className="mt-1 wrap-break-word text-sm text-slate-200">
                           {value || "—"}
                         </p>
                       )}
